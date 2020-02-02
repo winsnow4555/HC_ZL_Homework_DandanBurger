@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+}
+
+nav {
+    background: #f9c300;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    height: 120px;
+    z-index: 1;
+}
+
+#logo img {
+    width: 80px;
+    background: #ffffff;
+    border-radius: 50%;
+    vertical-align: -25px;
+    padding: 10px;
+    margin: 0 50px;
+}
+
+#logo a {
+    color: red;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+nav ol li {
+    display: inline-block;
+    padding: 30px;
+    transition: 0.75s;
+}
+
+nav ol li:hover {
+    transform: scale(1.25);
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* 橫幅 */
+#banner {
+    height: 100vh;
+    background-image: url(./img/banner.jpeg);
+    background-size: cover;
+    text-align: -15px;
+    transition: 1.5s;
+}
+
+#banner:hover {
+    transform: scale(1.15);
+}
+
+#banner-box {
+    overflow: hidden;
+}
+
+/* 文字區域 */
+section h1 {
+    color: #f9c300;
+    font-size: 32px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#month, #news, #partner, #stronghold {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#partner li, #stronghold li {
+    margin-left: 20px;
+    padding: 10px 0;
+}
+
+/* 頁尾 */
+footer {
+    background: #f9c300;
+    color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 120px;
+}
